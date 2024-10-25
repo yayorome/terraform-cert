@@ -1,0 +1,20 @@
+{
+    "Version": "2024-10-24",
+    "Statement" : [
+        {
+            "Action": "ec2:*",
+            "Effect": "Allow",
+            "Resource": "*"
+        },
+        {
+            "Action": "elasticloadbalancing:*",
+            "Effect": "Allow",
+            "Resource": "*"
+        },
+        {
+            "Action": "cloudwatch:*",
+            "Effect": "Allow",
+            "Resource": "*"
+        }
+    ]
+}
