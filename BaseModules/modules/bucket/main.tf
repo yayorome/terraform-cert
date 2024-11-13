@@ -1,11 +1,12 @@
+//Dont hardcode region on module
 provider "aws" {
-  region = "us-east-1"
+  region = var.region
 }
 
 resource "aws_s3_bucket" "s3bucket" {
-  bucket = "one_bucket"
+  bucket = var.bucket_name
   tags = {
-    Name = "One Bucket"
-    Env = "dev"
+    Name = var.bucket_name
+    Env = var.env
   }
 }
